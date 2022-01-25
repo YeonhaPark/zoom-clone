@@ -10,5 +10,11 @@ html(lang="en")
     header 
       h1 It works!
     main
-      h2 Welcome to Noon
+      form#nick
+        input(type="text", placeholder="Choose a nickname", required)
+        button Save 
+      form#message 
+        ul List
+        input(type="text", placeholder="Write a message", required)
+        button Send
     script(src="/public/js/app.js")
